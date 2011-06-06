@@ -1,0 +1,17 @@
+Google Weather Widget for Awesome Window Manager
+
+Author: Jesse R. Adams
+Website: https://github.com/jesseadams/weather
+
+Installation:
+1. Clone this repo to ~/.config/awesome
+
+2. Add the following to your rc.lua (123456 being your postal code)
+
+require('weather')
+t = widget({ type = "textbox", name = "weather" })
+weather.register(forecast, 123456)
+
+3. Add weather to your wibox widgets
+
+Your feedback is greatly appreciated!
