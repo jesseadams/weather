@@ -8,10 +8,31 @@ Installation:
 
 2. Add the following to your rc.lua (123456 being your postal code)
 
-require('weather')
-t = widget({ type = "textbox", name = "weather" })
-weather.register(forecast, 123456)
+  require('weather')
+  forecast = widget({ type = "textbox", name = "weather" })
+  weather.register(forecast, 123456)
 
-3. Add weather to your wibox widgets
+3. Add forecast to your wibox widgets. Mine looks like:
+
+  mywibox[s].widgets = {
+    {
+      mylauncher,
+      mytaglist[s],
+      mypromptbox[s],
+      layout = awful.widget.layout.horizontal.leftright
+    },
+    mylayoutbox[s],
+    memwidget,
+    cpuwidget,
+    fswidget,
+    batwidget,
+    volwidget,
+    forecast,
+    mytextclock,
+    s == 1 and mysystray or nil,
+    mytasklist[s],
+    layout = awful.widget.layout.horizontal.rightleft
+  }
+
 
 Your feedback is greatly appreciated!
