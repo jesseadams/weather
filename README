@@ -1,5 +1,7 @@
 Google Weather Widget for Awesome Window Manager
 
+This widget grabs weather data from Google's API based on a postal code and allows you to display it as an awesome textbox widget. The widget will display the current temperature (in F) and will have a tooltip with more details. The widget checks for updates every 10 minutes.
+
 Author: Jesse R. Adams
 Website: https://github.com/jesseadams/weather
 
